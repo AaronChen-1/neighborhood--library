@@ -7,6 +7,7 @@ public class Book {
     private boolean isCheckedOut;
     private String checkedOutTo;
 
+    // Constructor
     public Book(int id, String isbn, String title, boolean isCheckedOut, String checkedOutTo) {
         this.id = id;
         this.isbn = isbn;
@@ -46,7 +47,7 @@ public class Book {
     }
 
 
-
+// Methods
 public void checkOut(String name) {
         if(!isCheckedOut) {
             isCheckedOut = true;
